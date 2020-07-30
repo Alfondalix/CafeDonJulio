@@ -1,0 +1,238 @@
+/*============= RESET STYLE =============
+
+/*-- iPhone X Remove Gutters
+Ignore W3C Validation error for this style. --*/
+html {
+  padding: env(safe-area-inset);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/*-- Body Resets --*/
+body {
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+  overflow-x: hidden;
+}
+
+/*============= NAVIGATION =============*/
+.navbar-brand img {
+  height: 3rem;
+}
+.navbar-dark {
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: #d6c091;
+}
+.navbar-nav li {
+  padding-right: 0.8rem;
+}
+.navbar-nav .nav-link {
+  padding-top: 0.8rem;
+  color: white !important;
+}
+.cafe-icon {
+  color: #984e14;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+  color: #984e14 !important;
+}
+/*============= LANDING PAGE =============*/
+
+/*-- Fixed Landing Page Section --*/
+.landing {
+  height: 100vh;
+}
+
+.home-inner {
+  background-image: url('../img/galeria/cafemov.gif');
+  position: fixed;
+}
+.background-overlay {
+  position: absolute;
+  background: rgba(84, 67, 67, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*-- Landing Page Content --*/
+.caption {
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+}
+.btn {
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+}
+
+/*============= ABOUT SECTION =============*/
+
+/*-- Scrollspy Offset --*/
+.offset:before {
+  content: '';
+  height: 3.875rem;
+  display: block;
+  margin-top: -3.875rem;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.about .svg-inline--fa {
+  color: #984e14;
+}
+
+/*============= PORTFOLIO SECTION =============*/
+.portfolio-item img:hover {
+  transform: scale(1.1);
+}
+.portfolio-item img {
+  height: 300px;
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+video {
+  margin-top: -30px;
+}
+/*============= TESTIMONIALS SECTION =============*/
+.clientes .card img {
+  object-fit: cover;
+  height: 280px;
+  width: 100%;
+}
+.card-img-top {
+  border-radius: 50%;
+}
+.card {
+  border-radius: 50%;
+}
+
+/*============= CONTACT SECTION =============*/
+.footer {
+  background-color: #565b61;
+}
+.footer img {
+  height: 2rem;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+ul.social {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 11.8rem;
+}
+
+ul.social li {
+  margin: 0 auto;
+  display: inline;
+  padding-right: 1.2rem;
+}
+.footer .svg-inline--fa {
+  font-size: 1.6rem;
+}
+.footer .svg-inline--fa:hover {
+  color: #5a2e0c;
+}
+.footer img {
+  width: 120px;
+  height: 80px;
+}
+hr.socket {
+  border-top: 0.2rem solid #666b71;
+}
+.modal-content img {
+  height: 50%;
+  width: 100%;
+}
+/*============= MEDIA QUERIES =============*/
+
+/* Medium (md) devices (tablets, 768px and under) */
+@media (max-width: 767.98px) {
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}
+/* Small (sm) devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  video {
+    width: 325px;
+    margin-top: -70px;
+  }
+
+  /* .clientes .card {
+    width: 40%;
+  }
+  .card {
+    width: 45%;
+  }
+  .clientes .card img {
+    object-fit: cover;
+    height: 120px;
+    width: 100%;
+  } */
+  .modal-content img {
+    height: 60%;
+    width: 100%;
+  }
+}
