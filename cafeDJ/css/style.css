@@ -104,20 +104,16 @@ body {
 
   transition: transform 0.4s ease;
 }
-video {
-  margin-top: -30px;
-}
+
 /*============= TESTIMONIALS SECTION =============*/
-.clientes .card img {
-  object-fit: cover;
-  height: 280px;
-  width: 100%;
-}
-.card-img-top {
+.testimonial-img {
+  height: 120px;
+  width: 50%;
   border-radius: 50%;
+  margin: 15px 10px;
 }
-.card {
-  border-radius: 50%;
+.testimonials {
+  background-color: #e9ecef;
 }
 
 /*============= CONTACT SECTION =============*/
@@ -215,11 +211,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 /* Small (sm) devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-  video {
-    width: 325px;
-    margin-top: -70px;
-  }
-
   /* .clientes .card {
     width: 40%;
   }
@@ -234,5 +225,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
   .modal-content img {
     height: 60%;
     width: 100%;
+  }
+  .cliente {
+    width: 50%;
+  }
+  .testimonial-img {
+    width: 160px;
+    margin-bottom: 20px;
   }
 }
