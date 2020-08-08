@@ -104,16 +104,28 @@ body {
 
   transition: transform 0.4s ease;
 }
+.galeria-sub {
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+}
 
 /*============= TESTIMONIALS SECTION =============*/
+.clientes-titulo {
+  margin-bottom: 40px;
+}
+
 .testimonial-img {
   height: 120px;
   width: 50%;
   border-radius: 50%;
   margin: 15px 10px;
+  filter: drop-shadow(1px 2px 3px black);
 }
 .testimonials {
   background-color: #e9ecef;
+}
+.cliente {
+  margin-bottom: 50px;
 }
 
 /*============= CONTACT SECTION =============*/
@@ -227,10 +239,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
     width: 100%;
   }
   .cliente {
-    width: 50%;
+    width: 48%;
   }
   .testimonial-img {
     width: 160px;
     margin-bottom: 20px;
+    filter: drop-shadow(1px 2px 3px black);
+    margin: 15px 0px;
   }
 }
